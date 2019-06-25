@@ -1,0 +1,16 @@
+<html>
+<body>
+	{% if result["status"]== "correto" %}
+		Login realizado com sucesso
+		<a href="/corrente">Clique Aqui</a> 
+	{% elif result["status"]== "senha-incorreta" %}
+		senha incorreta
+		<a href="/login">login</a>
+		{% elif result["status"]== "senha-incorreta" %}
+		senha incorreeta
+	{% else %}
+		erro de programação
+	{% endif%}
+	
+</body>
+</html>
